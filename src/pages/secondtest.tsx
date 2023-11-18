@@ -7,24 +7,24 @@ import {
   FacebookIcon,
   LineIcon,
   TwitterIcon
-} from "react-share";
+} from "react-share"
 
 
 
 export default function About() {
-    const URL = 'https://americandog.vercel.app/';
-  const QUOTE = 'あめりかんどっぐ　みんなに共有してね　#ホラー';
+    const URL = 'https://americandog.vercel.app/'
+  const QUOTE = 'あめりかんどっぐ　みんなに共有してね　#ホラー'
 
-  const isBrowser = typeof window !== 'undefined';
+  const isBrowser = typeof window !== 'undefined'
   const urlCopyHandler = async (url: string) => {
-    if (!isBrowser) return;
+    if (!isBrowser) return
     try {
-      await navigator.clipboard.writeText(url);
-      console.log('URLのコピーに成功しました');
+      await navigator.clipboard.writeText(url)
+      console.log('URLのコピーに成功しました')
     } catch {
-      console.error('URLのコピーに失敗しました');
+      console.error('URLのコピーに失敗しました')
     }
-  };
+  }
 
     return (
       <Layout>
